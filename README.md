@@ -1,2 +1,2 @@
 # aulas-php__backup
- Atividades desenvolvidas nas aulas de PHP
+ Exemplos e exercícios desenvolvidos durante as aulas de PHP
