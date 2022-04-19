@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário e PHP</title>
+</head>
+<body>
+    <h1>Trabalhando com dados de formulários</h1>
+    <hr>
+
+<form action="processa-post.php" method="post">
+    <p>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+    </p>
+    <p>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email">
+    </p>
+    <p>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" min="1" max="100">
+    </p>
+
+    <div>
+        <p>Interesses:</p>
+        <input type="checkbox" name="interesses[]" id="html" value="HTML">
+        <label for="html">HTML</label>
+
+        <input type="checkbox" name="interesses[]" id="css" value="CSS">
+        <label for="css">CSS</label>
+
+        <input type="checkbox" name="interesses[]" id="js" value="JS">
+        <label for="js">JS</label>
+    </div>
+
+    <div> <!-- input :radio -> opção única/exclusiva-->
+        <p>Deseja receber informativos? </p>
+
+        <!-- required serve para deixar um campo obrigatorio de se responder -->
+
+        <input  value= "sim" type="radio" name="informativos" id="sim">
+        <label for="sim">Sim</label>
+
+        <input value="não" type="radio" name="informativos" id="nao">
+        <label for="nao">Não</label>
+    </div>
+
+
+    <p>
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="6"> </textarea>
+    </p>
+    <button type="submit" name="enviar">Enviar dados</button> 
+</form> 
+</body>
+</html>

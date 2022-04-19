@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 07</title>
+</head>
+<body>
+    
+    <hr>
+    <h1>Preencha o formulário</h1>
+
+    <form action ="exercicio07-processa-post.php" method="post">
+        <p>
+            <label for="produto">Produto:</label>
+            <input  type="text" name="produto" id="produto">
+        </p>
+
+        <p> Fabricante: </p>
+            <select name="fabricantes" id="fabricantes">
+                <option value=""></option>
+
+            
+                <option value="samsung">Samsung</option>
+                <option value="apple">Apple</option>
+                <option value="xiaomi">Xiaomi</option>
+                <option value="motorola">Motorola</option>
+                <option value="lg">LG</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="preço">Preço: </label>
+            <input type="number" name="preço" id="preço" min="100" max="10000" step="0.01">
+        </p>
+
+        <p> <label for="descrição">Descrição: </label> </p>
+        
+            <textarea name="descrição" id="descrição" cols="30" rows="5"></textarea>
+
+            <p>
+            <button type="submit" name="">Enviar</button>
+            </p>
+       
+    </form> 
+</body>
+</html>
