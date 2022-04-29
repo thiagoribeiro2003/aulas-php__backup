@@ -55,5 +55,11 @@
         echo "<p>Estamos estudando no <b>".ESCOLA."</b> </p>";
     ?>
 
+<hr>
+<h2>Relembrando Váriaveis e Constantes</h2>
+<?php define("a_melhor", "Natália"); ?>
+
+<p>A pessoa da minha vida é <?=a_melhor?></p>
+
 </body>
 </html>
